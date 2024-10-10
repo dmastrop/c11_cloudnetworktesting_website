@@ -1,0 +1,5 @@
+deploy:
+  script:
+    - docker-compose down && docker-compose up -d
+
+# stage and script. Runner will clone the repo to the VPS (where it is running) and then run the docker container with the index.html (docker-compose.yml)
